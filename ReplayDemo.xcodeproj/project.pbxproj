@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A792F2172627395D002670B0 /* RepayVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A792F2162627395D002670B0 /* RepayVideoSource.swift */; };
+		A792F21B26273967002670B0 /* RepayVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A792F2162627395D002670B0 /* RepayVideoSource.swift */; };
+		A792F220262742D2002670B0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A792F21F262742D2002670B0 /* CoreVideo.framework */; };
+		A792F2222627432C002670B0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A792F2212627432C002670B0 /* CoreMedia.framework */; };
+		A792F22726274EEE002670B0 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A792F22626274EEE002670B0 /* Photos.framework */; };
+		A7C37CE6262700B300840D1F /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF70E521262611DA0006FDDE /* ReplayKit.framework */; };
+		A7C37CE9262700B300840D1F /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C37CE8262700B300840D1F /* SampleHandler.swift */; };
+		A7C37CF0262700B400840D1F /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF70E521262611DA0006FDDE /* ReplayKit.framework */; };
+		A7C37CF1262700B400840D1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C37C8D2626F63C00840D1F /* UIKit.framework */; };
+		A7C37CF4262700B400840D1F /* BroadcastSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C37CF3262700B400840D1F /* BroadcastSetupViewController.swift */; };
+		A7C37CF8262700B400840D1F /* fpextSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A7C37CEF262700B400840D1F /* fpextSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A7C37CFB262700B400840D1F /* fpext.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A7C37CE5262700B300840D1F /* fpext.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DF70E50D262611C60006FDDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF70E50C262611C60006FDDE /* AppDelegate.swift */; };
+		DF70E50F262611C60006FDDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF70E50E262611C60006FDDE /* SceneDelegate.swift */; };
+		DF70E511262611C60006FDDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF70E510262611C60006FDDE /* ViewController.swift */; };
+		DF70E514262611C60006FDDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF70E512262611C60006FDDE /* Main.storyboard */; };
+		DF70E516262611C80006FDDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF70E515262611C80006FDDE /* Assets.xcassets */; };
+		DF70E519262611C80006FDDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF70E517262611C80006FDDE /* LaunchScreen.storyboard */; };
+		DF70E522262611DA0006FDDE /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF70E521262611DA0006FDDE /* ReplayKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7C37CF6262700B400840D1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF70E501262611C60006FDDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7C37CEE262700B400840D1F;
+			remoteInfo = fpextSetupUI;
+		};
+		A7C37CF9262700B400840D1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF70E501262611C60006FDDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7C37CE4262700B300840D1F;
+			remoteInfo = fpext;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7C37C9F2626F63C00840D1F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A7C37CFB262700B400840D1F /* fpext.appex in Embed App Extensions */,
+				A7C37CF8262700B400840D1F /* fpextSetupUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A792F20826271BA2002670B0 /* fpext.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fpext.entitlements; sourceTree = "<group>"; };
+		A792F2162627395D002670B0 /* RepayVideoSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepayVideoSource.swift; sourceTree = "<group>"; };
+		A792F21F262742D2002670B0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A792F2212627432C002670B0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A792F22626274EEE002670B0 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		A7C37C8D2626F63C00840D1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A7C37CD22626FFE900840D1F /* ReplayDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReplayDemo.entitlements; sourceTree = "<group>"; };
+		A7C37CE5262700B300840D1F /* fpext.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = fpext.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C37CE8262700B300840D1F /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		A7C37CEA262700B300840D1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7C37CEF262700B400840D1F /* fpextSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = fpextSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C37CF3262700B400840D1F /* BroadcastSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSetupViewController.swift; sourceTree = "<group>"; };
+		A7C37CF5262700B400840D1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7C37D08262717DC00840D1F /* fpextSetupUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fpextSetupUI.entitlements; sourceTree = "<group>"; };
+		DF70E509262611C60006FDDE /* ReplayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF70E50C262611C60006FDDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF70E50E262611C60006FDDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DF70E510262611C60006FDDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF70E513262611C60006FDDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF70E515262611C80006FDDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF70E518262611C80006FDDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF70E51A262611C80006FDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF70E521262611DA0006FDDE /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7C37CE2262700B300840D1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C37CE6262700B300840D1F /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C37CEC262700B400840D1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C37CF0262700B400840D1F /* ReplayKit.framework in Frameworks */,
+				A7C37CF1262700B400840D1F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF70E506262611C60006FDDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A792F22726274EEE002670B0 /* Photos.framework in Frameworks */,
+				A792F2222627432C002670B0 /* CoreMedia.framework in Frameworks */,
+				A792F220262742D2002670B0 /* CoreVideo.framework in Frameworks */,
+				DF70E522262611DA0006FDDE /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7C37CE7262700B300840D1F /* fpext */ = {
+			isa = PBXGroup;
+			children = (
+				A792F20826271BA2002670B0 /* fpext.entitlements */,
+				A7C37CE8262700B300840D1F /* SampleHandler.swift */,
+				A7C37CEA262700B300840D1F /* Info.plist */,
+			);
+			path = fpext;
+			sourceTree = "<group>";
+		};
+		A7C37CF2262700B400840D1F /* fpextSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				A7C37D08262717DC00840D1F /* fpextSetupUI.entitlements */,
+				A7C37CF3262700B400840D1F /* BroadcastSetupViewController.swift */,
+				A7C37CF5262700B400840D1F /* Info.plist */,
+			);
+			path = fpextSetupUI;
+			sourceTree = "<group>";
+		};
+		DF70E500262611C60006FDDE = {
+			isa = PBXGroup;
+			children = (
+				DF70E50B262611C60006FDDE /* ReplayDemo */,
+				A7C37CE7262700B300840D1F /* fpext */,
+				A7C37CF2262700B400840D1F /* fpextSetupUI */,
+				DF70E50A262611C60006FDDE /* Products */,
+				DF70E520262611DA0006FDDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DF70E50A262611C60006FDDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF70E509262611C60006FDDE /* ReplayDemo.app */,
+				A7C37CE5262700B300840D1F /* fpext.appex */,
+				A7C37CEF262700B400840D1F /* fpextSetupUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF70E50B262611C60006FDDE /* ReplayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A7C37CD22626FFE900840D1F /* ReplayDemo.entitlements */,
+				DF70E50C262611C60006FDDE /* AppDelegate.swift */,
+				DF70E50E262611C60006FDDE /* SceneDelegate.swift */,
+				DF70E510262611C60006FDDE /* ViewController.swift */,
+				DF70E512262611C60006FDDE /* Main.storyboard */,
+				DF70E515262611C80006FDDE /* Assets.xcassets */,
+				DF70E517262611C80006FDDE /* LaunchScreen.storyboard */,
+				DF70E51A262611C80006FDDE /* Info.plist */,
+				A792F2162627395D002670B0 /* RepayVideoSource.swift */,
+			);
+			path = ReplayDemo;
+			sourceTree = "<group>";
+		};
+		DF70E520262611DA0006FDDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A792F22626274EEE002670B0 /* Photos.framework */,
+				A792F2212627432C002670B0 /* CoreMedia.framework */,
+				A792F21F262742D2002670B0 /* CoreVideo.framework */,
+				DF70E521262611DA0006FDDE /* ReplayKit.framework */,
+				A7C37C8D2626F63C00840D1F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7C37CE4262700B300840D1F /* fpext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7C37CFF262700B400840D1F /* Build configuration list for PBXNativeTarget "fpext" */;
+			buildPhases = (
+				A7C37CE1262700B300840D1F /* Sources */,
+				A7C37CE2262700B300840D1F /* Frameworks */,
+				A7C37CE3262700B300840D1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fpext;
+			productName = fpext;
+			productReference = A7C37CE5262700B300840D1F /* fpext.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A7C37CEE262700B400840D1F /* fpextSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7C37CFC262700B400840D1F /* Build configuration list for PBXNativeTarget "fpextSetupUI" */;
+			buildPhases = (
+				A7C37CEB262700B400840D1F /* Sources */,
+				A7C37CEC262700B400840D1F /* Frameworks */,
+				A7C37CED262700B400840D1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fpextSetupUI;
+			productName = fpextSetupUI;
+			productReference = A7C37CEF262700B400840D1F /* fpextSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DF70E508262611C60006FDDE /* ReplayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF70E51D262611C80006FDDE /* Build configuration list for PBXNativeTarget "ReplayDemo" */;
+			buildPhases = (
+				DF70E505262611C60006FDDE /* Sources */,
+				DF70E506262611C60006FDDE /* Frameworks */,
+				DF70E507262611C60006FDDE /* Resources */,
+				A7C37C9F2626F63C00840D1F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7C37CF7262700B400840D1F /* PBXTargetDependency */,
+				A7C37CFA262700B400840D1F /* PBXTargetDependency */,
+			);
+			name = ReplayDemo;
+			productName = ReplayDemo;
+			productReference = DF70E509262611C60006FDDE /* ReplayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF70E501262611C60006FDDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "B@db0Y";
+				TargetAttributes = {
+					A7C37CE4262700B300840D1F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A7C37CEE262700B400840D1F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					DF70E508262611C60006FDDE = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = DF70E504262611C60006FDDE /* Build configuration list for PBXProject "ReplayDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF70E500262611C60006FDDE;
+			productRefGroup = DF70E50A262611C60006FDDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF70E508262611C60006FDDE /* ReplayDemo */,
+				A7C37CE4262700B300840D1F /* fpext */,
+				A7C37CEE262700B400840D1F /* fpextSetupUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7C37CE3262700B300840D1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C37CED262700B400840D1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF70E507262611C60006FDDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF70E519262611C80006FDDE /* LaunchScreen.storyboard in Resources */,
+				DF70E516262611C80006FDDE /* Assets.xcassets in Resources */,
+				DF70E514262611C60006FDDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7C37CE1262700B300840D1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A792F21B26273967002670B0 /* RepayVideoSource.swift in Sources */,
+				A7C37CE9262700B300840D1F /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C37CEB262700B400840D1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C37CF4262700B400840D1F /* BroadcastSetupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF70E505262611C60006FDDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF70E511262611C60006FDDE /* ViewController.swift in Sources */,
+				DF70E50D262611C60006FDDE /* AppDelegate.swift in Sources */,
+				A792F2172627395D002670B0 /* RepayVideoSource.swift in Sources */,
+				DF70E50F262611C60006FDDE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7C37CF7262700B400840D1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7C37CEE262700B400840D1F /* fpextSetupUI */;
+			targetProxy = A7C37CF6262700B400840D1F /* PBXContainerItemProxy */;
+		};
+		A7C37CFA262700B400840D1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7C37CE4262700B300840D1F /* fpext */;
+			targetProxy = A7C37CF9262700B400840D1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF70E512262611C60006FDDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF70E513262611C60006FDDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF70E517262611C80006FDDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF70E518262611C80006FDDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7C37CFD262700B400840D1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = fpextSetupUI/fpextSetupUI.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3QCVS5M6Q4;
+				INFOPLIST_FILE = fpextSetupUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arc.replaykit.ext.ui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ReplayKitExtUIDev;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7C37CFE262700B400840D1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = fpextSetupUI/fpextSetupUI.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3QCVS5M6Q4;
+				INFOPLIST_FILE = fpextSetupUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arc.replaykit.ext.ui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ReplayKitExtUIDev;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7C37D00262700B400840D1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = fpext/fpext.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3QCVS5M6Q4;
+				INFOPLIST_FILE = fpext/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arc.replaykit.ext.up;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ReplayKitExtUPDev;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7C37D01262700B400840D1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = fpext/fpext.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3QCVS5M6Q4;
+				INFOPLIST_FILE = fpext/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arc.replaykit.ext.up;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ReplayKitExtUPDev;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF70E51B262611C80006FDDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF70E51C262611C80006FDDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF70E51E262611C80006FDDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReplayDemo/ReplayDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3QCVS5M6Q4;
+				INFOPLIST_FILE = ReplayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arc.replaykit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ReplayKitDev;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF70E51F262611C80006FDDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReplayDemo/ReplayDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3QCVS5M6Q4;
+				INFOPLIST_FILE = ReplayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arc.replaykit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ReplayKitDev;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7C37CFC262700B400840D1F /* Build configuration list for PBXNativeTarget "fpextSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C37CFD262700B400840D1F /* Debug */,
+				A7C37CFE262700B400840D1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7C37CFF262700B400840D1F /* Build configuration list for PBXNativeTarget "fpext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C37D00262700B400840D1F /* Debug */,
+				A7C37D01262700B400840D1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF70E504262611C60006FDDE /* Build configuration list for PBXProject "ReplayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF70E51B262611C80006FDDE /* Debug */,
+				DF70E51C262611C80006FDDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF70E51D262611C80006FDDE /* Build configuration list for PBXNativeTarget "ReplayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF70E51E262611C80006FDDE /* Debug */,
+				DF70E51F262611C80006FDDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF70E501262611C60006FDDE /* Project object */;
+}

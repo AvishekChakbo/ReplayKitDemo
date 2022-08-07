@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ReplayDemo.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>fpext.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>fpextSetupUI.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A7C37CAE2626F71200840D1F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A7C37CB82626F71300840D1F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A7C37CE4262700B300840D1F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A7C37CEE262700B400840D1F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF70E508262611C60006FDDE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
